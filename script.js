@@ -6,8 +6,13 @@ body.append(textArea);
 
 const language = document.createElement('div');
 language.className = 'language';
-language.innerHTML = 'Привет!) Чтобы поменять раскладку клавиатуры - нажмите Томатную кнопку и так же поменяйте раскладку на вашем устройстве)';
+language.innerHTML = 'Привет!) Чтобы поменять раскладку клавиатуры - нажмите Томатную кнопку и так же поменяйте раскладку на вашем устройстве)!';
 body.append(language);
+
+const wish = document.createElement('div');
+wish.className = 'wish';
+wish.innerHTML = 'Хорошего дня!';
+body.append(wish);
 
 const keyboard = document.createElement('div');
 keyboard.className = 'keyboard';
