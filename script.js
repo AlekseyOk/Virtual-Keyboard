@@ -6,7 +6,7 @@ body.append(textArea);
 
 const language = document.createElement('div');
 language.className = 'language';
-language.innerHTML = 'Привет!) Чтобы поменять раскладку клавиатуры - нажмите Томатную кнопку, </br> для подсветки кнопок при нажатии на физическую клавиатуру - поменяйте раскладку на вашем устройстве)';
+language.innerHTML = 'Привет!) Чтобы поменять раскладку клавиатуры - нажмите Томатную кнопку и поменяйте раскладку на вашем устройстве)';
 body.append(language);
 
 const keyboard = document.createElement('div');
