@@ -1,10 +1,19 @@
+
+body {
+    text-align: center;
+    width: 100%;
+}
+
 #keyboard {
-    display: block;
-    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid #6292c2;;
     padding: 5px;
-    width: 850px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
 }
 
 #keyboard::after {
@@ -20,6 +29,27 @@
     margin: 3px;
     padding: 3px;
     float: left;
+    cursor: pointer;
+    background: #6292c2;
+    border: 2px solid #eee;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -o-transition: All 1s ease;
+    -ms-transition: All 1s ease;
+    transition: All 1s ease;
+}
+
+.k-key:active {
+    border-radius: 50%;
+    transition: .4s;
 }
 
 .clearfix {
@@ -30,4 +60,29 @@
 
 .active {
     background-color: orange;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+    border-color: tomato;
+    font-size: 16px;
+}
+
+.language {
+    width: 500px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.changeLanguage {
+    position: absolute;
+    width: 119px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    cursor: pointer;
+    left: 20%;
+    top: 0;
 }
