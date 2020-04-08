@@ -2,6 +2,7 @@
 body {
     text-align: center;
     width: 100%;
+    line-height: 3em;
 }
 
 #keyboard {
@@ -28,28 +29,40 @@ body {
     border: 1px solid black;
     margin: 3px;
     padding: 3px;
-    float: left;
     cursor: pointer;
     background: #6292c2;
     border: 2px solid #eee;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
     border-radius: 15px;
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-    -webkit-transition: All 1s ease;
-    -moz-transition: All 1s ease;
-    -o-transition: All 1s ease;
-    -ms-transition: All 1s ease;
-    transition: All 1s ease;
+    /* transition: All 1s ease; */
+    text-decoration: none;
+  outline: none;
+  display: inline-block;
+  color: white;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  transition: .5s;
+}
+
+.error {
+    color: tomato;
+}
+
+.k-key:hover {
+    opacity: 80%;
+    background-position: right center;
 }
 
 .k-key:active {
     border-radius: 50%;
-    transition: .4s;
+    transition: .1s;
+    background-position: right center;
 }
 
 .clearfix {
@@ -59,30 +72,44 @@ body {
 }
 
 .active {
-    background-color: orange;
+    background: orange;
 }
 
 textarea {
-    width: 300px;
-    height: 150px;
+    width: 400px;
+    height: 100px;
     border-color: tomato;
     font-size: 16px;
 }
 
 .language {
-    width: 500px;
+    width: 900px;
     height: 30px;
     margin: 0 auto;
+    margin-bottom: 30px;
+    line-height: 1em;
 }
 
 .changeLanguage {
-    position: absolute;
+    position: static;
     width: 119px;
     height: 50px;
     border: 1px solid black;
     margin: 3px;
     padding: 3px;
     cursor: pointer;
-    left: 20%;
-    top: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: tomato;
+    border: 2px solid #eee;
+    border-radius: 10px;
 }
+
+.spin {
+    width: 5em;
+    height: 5em;
+    padding: 0;
+    
+  }
+
+  
