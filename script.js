@@ -31,7 +31,7 @@ function init() {
 
   // положили все кнопки в html
   let out = '';
-  for (let i = 0; i < keyboardNumbers.length; i++) {
+  for (let i = 0; i < keyboardNumbers.length; i += 1) {
     if (i === 13 || i === 25 || i === 37) {
       out += '<div class="clearfix"></div>';
     }
@@ -56,7 +56,7 @@ function init() {
 
   // добавляем текст в textarea
   document.querySelectorAll('#keyboard .k-key').forEach((element) => {
-    element.onclick = function addTextToArea() {
+    element.addEventListener('click', function addDataToTextArea() {
       document.querySelectorAll('#keyboard .k-key').forEach((el) => {
         el.classList.remove('active');
       });
@@ -65,14 +65,13 @@ function init() {
       language.classList.remove('error');
       textArea.value += String.fromCharCode(code);
       textArea.focus();
-    };
+    });
   });
 }
 
 init();
 
 // кнопка смены языка
-
 const buttonChangeLanguage = document.createElement('div');
 buttonChangeLanguage.className = 'changeLanguage';
 buttonChangeLanguage.innerHTML = 'Eng';
