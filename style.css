@@ -61,7 +61,7 @@ body {
 
 .k-key:active {
     border-radius: 50%;
-    transition: .1s;
+    transition: 1s;
     background-position: right center;
 }
 
@@ -73,6 +73,8 @@ body {
 
 .active {
     background: orange;
+    border-radius: 50%;
+    transition: 1fs;
 }
 
 textarea {
