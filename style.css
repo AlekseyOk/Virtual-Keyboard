@@ -5,7 +5,7 @@ body {
     line-height: 3rem;
 }
 
-#keyboard {
+.keyboard {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
 }
 
-#keyboard::after {
+.keyboard::after {
     content: "";
     display: block;
     clear: both;
