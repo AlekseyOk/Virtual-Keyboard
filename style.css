@@ -2,22 +2,20 @@
 body {
     text-align: center;
     width: 100%;
-    line-height: 3em;
+    line-height: 3rem;
 }
 
-#keyboard {
+.keyboard {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 2px solid #6292c2;;
+    border: 2px solid #6292c2;
     padding: 5px;
     max-width: 900px;
     margin: 0 auto;
-    text-align: center;
-    position: relative;
 }
 
-#keyboard::after {
+.keyboard::after {
     content: "";
     display: block;
     clear: both;
@@ -35,23 +33,22 @@ body {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 15px;
-    /* transition: All 1s ease; */
     text-decoration: none;
-  outline: none;
-  display: inline-block;
-  color: white;
-  border-radius: 10px;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
-  background-size: 200% auto;
-  box-shadow: 0 0 20px rgba(0,0,0,.1);
-  transition: .5s;
+    outline: none;
+    display: inline-block;
+    color: #eee;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
 }
 
 .error {
-    color: tomato;
+    color: rgb(255, 99, 71);
 }
 
 .k-key:hover {
@@ -61,7 +58,7 @@ body {
 
 .k-key:active {
     border-radius: 50%;
-    transition: .1s;
+    transition: 0.1s;
     background-position: right center;
 }
 
@@ -72,13 +69,13 @@ body {
 }
 
 .active {
-    background: orange;
+    background: rgb(255, 99, 71);
 }
 
 textarea {
     width: 400px;
     height: 100px;
-    border-color: tomato;
+    border-color: rgb(255, 99, 71);
     font-size: 16px;
 }
 
@@ -87,29 +84,33 @@ textarea {
     height: 30px;
     margin: 0 auto;
     margin-bottom: 30px;
-    line-height: 1em;
+    line-height: 20px;
+    margin-bottom: 0;
 }
 
-.changeLanguage {
-    position: static;
+.wish {
+    width: 900px;
+    height: 30px;
+    margin: 0 auto;
+    line-height: 0.5rem;
+}
+
+.change-language {
     width: 119px;
     height: 50px;
-    border: 1px solid black;
+    border: 1px solid rgba(0,0,0,.1);
     margin: 3px;
     padding: 3px;
     cursor: pointer;
     margin: 0 auto;
     margin-top: 20px;
-    background: tomato;
+    background: rgb(255, 99, 71);
     border: 2px solid #eee;
     border-radius: 10px;
 }
 
 .spin {
-    width: 5em;
-    height: 5em;
+    width: 5rem;
+    height: 5rem;
     padding: 0;
-    
-  }
-
-  
+}
