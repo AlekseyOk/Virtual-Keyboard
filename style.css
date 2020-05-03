@@ -1,0 +1,116 @@
+
+body {
+    text-align: center;
+    width: 100%;
+    line-height: 3rem;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid #6292c2;
+    padding: 5px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.keyboard::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.k-key {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000000;
+    margin: 3px;
+    padding: 3px;
+    cursor: pointer;
+    background: #6292c2;
+    border: 2px solid #eee;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 15px;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: #eee;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #000000;
+    transition: .5s;
+}
+
+.error {
+    color: #FF6347;
+}
+
+.k-key:hover {
+    opacity: 80%;
+    background-position: right center;
+}
+
+.k-key:active {
+    border-radius: 50%;
+    transition: 0.1s;
+    background-position: right center;
+}
+
+.clearfix {
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.active {
+    background: #FF6347;
+}
+
+textarea {
+    width: 400px;
+    height: 100px;
+    border-color: #FF6347;
+    font-size: 16px;
+}
+
+.language {
+    width: 900px;
+    height: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+.wish {
+    width: 900px;
+    height: 30px;
+    margin: 0 auto;
+    line-height: 0.5rem;
+}
+
+.change-language {
+    width: 119px;
+    height: 50px;
+    border: 1px solid #000000;
+    margin: 3px;
+    padding: 3px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: #FF6347;
+    border: 2px solid #eee;
+    border-radius: 10px;
+}
+
+.spin {
+    width: 5rem;
+    height: 5rem;
+    padding: 0;
+}
